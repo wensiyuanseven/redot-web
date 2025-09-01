@@ -1,14 +1,14 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 // @style
-import './globals.css';
+import "./globals.css";
 
 // @mui
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 
 // @project
-import ProviderWrapper from './ProviderWrapper';
-import { mainMetadata } from '@/metadata';
+import ProviderWrapper from "./ProviderWrapper";
+import { mainMetadata } from "@/metadata";
 
 /***************************  METADATA - MAIN  ***************************/
 
@@ -30,6 +30,10 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
       <body>
+        <script
+          id="respondio__widget"
+          src="https://cdn.respond.io/webchat/widget/widget.js?cId=38751640ea8318fa52a2d372d17c90f"
+        ></script>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <ProviderWrapper>{children}</ProviderWrapper>
         </AppRouterCacheProvider>
